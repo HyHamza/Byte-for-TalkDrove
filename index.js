@@ -26,7 +26,7 @@ puppeteer.use(StealthPlugin());
         await page.setViewport({ width: 1280, height: 800 });
 
         // Navigate to login page
-        await page.goto('https://chat.talkdrove.cc.nf/login?next=https://chat.talkdrove.cc.nf/talkdrove');
+        await page.goto('https://chat.talkdrove.cc.nf/login?next=https://chat.talkdrove.cc.nf/talkdrove/Min');
 
         // Wait for login form to load
         await page.waitForSelector('form.user');
@@ -45,7 +45,8 @@ puppeteer.use(StealthPlugin());
         await new Promise(resolve => setTimeout(resolve, 2000));
 
         console.log('Logged in successfully!');
-
+        await sendMessage('Bot is deployed now!');
+        await page.goto('https://chat.talkdrove.cc.nf/talkdrove');
         // Function to send a message
         async function sendMessage(message) {
             await page.type('.emojionearea-editor', message);
@@ -69,7 +70,7 @@ puppeteer.use(StealthPlugin());
                 const message = messages[0]; // Take the first message for processing
                 if (message.toLowerCase() === '/test') {
                     console.log('Sending response: Hey, Bot is working!');
-                    await sendMessage('Hey, Bot is working!');
+                    await sendMessage('Hey, Bot is active!');
                 } else if (message.toLowerCase() === '/dev') {
                     console.log('Sending response: Hamza is my developer');
                     await sendMessage('Hamza is my developer');
