@@ -1,5 +1,5 @@
 {
-  "name": "TalkDrove Bot",
+  "name": "my-puppeteer-project",
   "version": "1.0.0",
   "description": "A project to deploy Puppeteer script on Vercel",
   "main": "index.js",
