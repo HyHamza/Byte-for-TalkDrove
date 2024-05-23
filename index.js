@@ -32,8 +32,8 @@ puppeteer.use(StealthPlugin());
         await page.waitForSelector('form.user');
 
         // Fill in login details
-        await page.type('input[name="email"]', 'Byte');
-        await page.type('input[name="password"]', 'ourbotis@byte');
+        await page.type('input[name="email"]', 'talkdrove');
+        await page.type('input[name="password"]', '3800380@talkdrove');
 
         // Click on login button
         await page.click('button[type="submit"]');
