@@ -1,17 +1,32 @@
 {
-  "name": "talkdrove-bot",
+  "name": "my-puppeteer-project",
   "version": "1.0.0",
-  "description": "A bot for TalkDrove chat",
+  "description": "A project to deploy Puppeteer script on Vercel",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
+  "keywords": [
+    "puppeteer",
+    "vercel",
+    "deployment"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
-    "puppeteer": "^13.1.0",
-    "puppeteer-extra": "^4.0.1",
-    "puppeteer-extra-plugin-stealth": "^2.7.0"
+    "puppeteer": "^12.0.0",
+    "puppeteer-extra": "^3.1.0",
+    "puppeteer-extra-plugin-stealth": "^2.8.0"
   },
+  "devDependencies": {},
   "engines": {
-    "node": ">=14.0.0"
+    "node": "14.x"
+  },
+  "vercel": {
+    "functions": {
+      "index.js": {
+        "runtime": "@vercel/node"
+      }
+    }
   }
 }
