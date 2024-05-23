@@ -1,0 +1,17 @@
+{
+  "name": "talkdrove-bot",
+  "version": "1.0.0",
+  "description": "A bot for TalkDrove chat",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "puppeteer": "^13.1.0",
+    "puppeteer-extra": "^4.0.1",
+    "puppeteer-extra-plugin-stealth": "^2.7.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
