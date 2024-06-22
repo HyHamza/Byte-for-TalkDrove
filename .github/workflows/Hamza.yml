@@ -19,7 +19,7 @@ jobs:
         node-version: '20'
         
     - name: Install dependencies
-      run: yarn install --network-concurrency 1
+      run: npm install
       
     - name: Start application
-      run: node index.js
+      run: npm start
