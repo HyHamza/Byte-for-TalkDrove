@@ -20,7 +20,7 @@
   },
   "devDependencies": {},
   "engines": {
-    "node": "14.x"
+    "node": "20.18.0x"
   },
   "vercel": {
     "functions": {
